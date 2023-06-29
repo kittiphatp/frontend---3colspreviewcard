@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .container {width: 918px; height: 500px; margin: 172px auto 20px auto; font-family: 'Arial Narrow'; display: flex;}
+
+    .flex {width: 306px; height: 500px; color: white; display: flex; flex-direction: column; justify-content: space-around; align-items: flex-start;}
+    .left-column {background: #e28525; border-top-left-radius: 15px; border-bottom-left-radius: 15px;}
+    .center-column {background: #016972}
+    .right-column {background: #00403f;border-top-right-radius: 15px; border-bottom-right-radius: 15px;}
+
+    .logo, header, article, input {margin-left: 44px;}
+    header {font-size: 36px; font-weight: 700; text-transform: uppercase; letter-spacing: -2px;}
+    article {font-size: 16px; letter-spacing: 1px; line-height: 1.5; margin-top: 26px;}
+    input {text-transform: capitalize;}
+    input {border-style: none; padding: 16px 30px; font-weight: 600; border-radius: 25px;}
+
+    .btn-sedans {color: #e28525;}
+    .btn-suvs {color: #016972;}
+    .btn-luxury {color: #00403f;}
+    
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+    @media screen and (max-width: 380px){
+      .container {width: 918px; height: auto; margin: 172px auto 20px 20px; font-family: 'Arial Narrow'; display: block;}
+      .left-column {border-bottom-left-radius: 0px; border-top-left-radius: 15px; border-top-right-radius: 15px;}
+      .right-column {border-top-right-radius: 0px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; margin-bottom: 10px;}
+    }
+  </style>
+</head>
+<body>
+  
+  <section class="container">
+    <!-- LEFT COLUMN -->
+    <div class="flex left-column">
+      <div class="logo"><img src="./images/icon-sedans.svg" alt="sedans-img"></div>
+      <main> 
+        <header>Sedans</header>
+        <article>
+          Choose a sedan for its        <br>
+          affordability and excellent   <br>
+          fuel economy. Ideal for       <br>
+          cruising in the city          <br>
+          or on your next road trip.  
+        </article>
+      </main>
+      <input type="button" value="Learn more" class="btn-sedans">
+    </div>
+
+    <!-- CENTER COLUMN -->
+    <div class="flex center-column">
+      <div class="logo"><img src="./images/icon-suvs.svg" alt="suvs-img"></div>
+        <main>
+          <header>SUVs</header>
+          <article>
+            Take an SUV for its spacious  <br>
+            interior, power, and          <br>
+            versatility. Perfect for your <br>
+            next family vacation and      <br>
+            off-road adventures.
+          </article>
+        </main>
+      <input type="button" value="Learn more" class="btn-suvs">
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="flex right-column">
+      <div class="logo"><img src="./images/icon-luxury.svg" alt="luxury-img"></div>
+      <main>
+        <header>Luxury</header>
+        <article>
+          Cruise in the best car brands <br>
+          without the bloated prices.   <br>
+          Enjoy the enhanced comfort    <br>
+          of a luxury rental and arrive <br>
+          in style.
+        </article>
+      </main>
+      <input type="button" value="Learn more" class="btn-luxury">
+    </div>
+  </section>
+  
+  
+
+  
+  
+
+  
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Kittiphat Pisuittiporn</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
